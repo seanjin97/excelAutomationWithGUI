@@ -1,0 +1,10 @@
+1. Double click app.pyw to run the programme. 
+2. Check the settings shown in the programme before running
+ - UOB lookup file is located in the checker folder. This file is required 	to generate the UOB branch codes. It should always be located in the 	"checker" folder
+3. Save after making changes to the settings
+4. On clicking "Check", a new column "Checker" will be shown.
+	False = Error
+	True = No Error
+5. After making changes to the rows with errors, clear the column filter and re-run "Check". Re-verify the "Checker" column.
+6. Click "Populate" to populate the SAP template. Only rows flagged as TRUE in the "Checker" column will be populated in the SAP template
+7. Clicking "Populate" multiple times will populate all rows flagged as TRUE multiple times, there will be repeats. It is recommended to only click "Populate" when all rows are flagged as TRUE. ** The checker always shows OCBC as FALSE. After other banks are flagged as TRUE, manually change the rows with OCBC to TRUE after verifying that the row is correct. **
